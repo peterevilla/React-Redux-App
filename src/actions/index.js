@@ -9,7 +9,7 @@ export const getData = () => (dispatch) => {
 
   setTimeout(() => {
     axios
-      .get("http://www.boredapi.com/api/activity/")
+      .get("https://www.boredapi.com/api/activity/")
       .then((response) => {
         console.log(response.data);
         dispatch({ type: DATA_SUCCESS, payload: response.data });
